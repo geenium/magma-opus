@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "magma_opus:fire_powder"
+  },
+  "result": "minecraft:glowstone_dust",
+  "experience": 0.15,
+  "cookingtime": 200
+}

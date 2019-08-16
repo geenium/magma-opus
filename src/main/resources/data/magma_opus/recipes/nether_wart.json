@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magma_opus:obsidian_orb"
+    },
+    {
+      "tag": "magma_opus:mushrooms"
+    }
+  ],
+  "result": {
+    "item": "minecraft:nether_wart"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lava_bucket"
+        },
+        "title": "Alchemical Albedo",
+        "description": "Gather lava and obsidian, ready for unification"
+    },
+    "parent": "minecraft:story/form_obsidian",
+    "criteria": {
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:obsidian"
+                    },
+                    {
+                        "item": "minecraft:lava_bucket"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "magma_opus:obsidian_orb"
+        ]
+    }
+}

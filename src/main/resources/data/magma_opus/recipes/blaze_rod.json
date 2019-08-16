@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    "pip",
+    " p "
+  ],
+  "key": {
+    "p": {
+      "item": "magma_opus:fire_powder"
+    },
+    "i": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:blaze_rod"
+  }
+}

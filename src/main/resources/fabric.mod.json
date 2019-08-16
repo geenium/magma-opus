@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "magma_opus",
+  "version": "${version}",
+
+  "name": "Magma Opus",
+  "description": "Allows to create anything gathered from the nether without ever having to go there!",
+  "authors": [
+    "Geenium"
+  ],
+
+  "license": "CC0-1.0",
+  "icon": "assets/magma_opus/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.geenium.MagmaOpus"
+    ]
+  },
+  "mixins": [
+    "magma_opus.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

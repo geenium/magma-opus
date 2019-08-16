@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "item": "magma_opus:obsidian_orb"
+        },
+        "title": "Magma Opus",
+        "description": "Obtain an obsidian orb"
+    },
+    "parent": "magma_opus:ready_obsidian_orb",
+    "criteria": {
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "magma_opus:obsidian_orb"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "magma_opus:blaze_rod",
+            "magma_opus:fire_powder",
+            "magma_opus:ghast_tear",
+            "magma_opus:glowstone_dust/glowstone_dust",
+            "magma_opus:glowstone_dust/glowstone_dust_blasting",
+            "magma_opus:nether_bricks",
+            "magma_opus:nether_wart",
+            "magma_opus:netherrack",
+            "magma_opus:obsidian",
+            "magma_opus:quartz",
+            "magma_opus:soul_sand",
+            "magma_opus:wither_skeleton_skull/wither_skeleton_skull",
+            "magma_opus:wither_skeleton_skull/wither_skeleton_skull_alt"
+        ]
+    }
+}
