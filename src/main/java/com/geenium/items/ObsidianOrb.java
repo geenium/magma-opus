@@ -17,7 +17,7 @@ public class ObsidianOrb extends Item {
     public ObsidianOrb(Settings settings) {
         super(settings);
         //Sets this item as it own recipe remainder via a mixin
-        ((ItemAccessor) this).setRecipeRemainder(this);
+        ((ItemAccessor) this).returnOrb(this);
     }
 
     @Override
@@ -27,16 +27,16 @@ public class ObsidianOrb extends Item {
             Block block = world.getBlockState(context.getBlockPos()).getBlock();
             BlockPos pos = context.getBlockPos();
 
-            if (block.equals(Blocks.COBBLESTONE)) {
+            if (block == Blocks.COBBLESTONE) {
                 world.setBlockState(pos, Blocks.NETHERRACK.getDefaultState());
                 return ActionResult.SUCCESS;
-            } else if (block.equals(Blocks.SAND) || block.equals(Blocks.RED_SAND)) {
+            } else if (block == Blocks.SAND || block == Blocks.RED_SAND) {
                 world.setBlockState(pos, Blocks.SOUL_SAND.getDefaultState());
                 return ActionResult.SUCCESS;
-            } else if (block.equals(Blocks.STONE_BRICKS)) {
+            } else if (block == Blocks.STONE_BRICKS) {
                 world.setBlockState(pos, Blocks.NETHER_BRICKS.getDefaultState());
                 return ActionResult.SUCCESS;
-            } else if (block.equals(Blocks.RED_MUSHROOM) || block.equals(Blocks.BROWN_MUSHROOM)) {
+            } else if (block == Blocks.RED_MUSHROOM || block == Blocks.BROWN_MUSHROOM) {
                 world.setBlockState(pos, Blocks.AIR.getDefaultState());
                 world.spawnEntity(new ItemEntity(world, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, new ItemStack(Items.NETHER_WART)));
                 return ActionResult.SUCCESS;
